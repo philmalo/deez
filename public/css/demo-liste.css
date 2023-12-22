@@ -1,0 +1,163 @@
+.demo-liste {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titre-principal {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+
+.custom-hr {
+  
+  color: black;
+  background-color: black;
+  height: 3px;
+  width: 50%;
+  align-self: center;
+  border-radius: 5px;
+  margin-top: 60px !important;
+  margin-bottom: 60px !important;
+}
+
+/* Style pour les rangées */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Style pour les colonnes */
+.column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Style pour les divs contenant les informations */
+.info-div {
+  margin-bottom: 20px;
+}
+
+/* Style pour les h3 */
+.info-div h3 {
+  margin-top: 0;
+}
+
+/* Style pour les tables */
+table {
+  width: fit-content;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Style pour les divs de la rangée d'informations */
+.info-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  gap: 20px;
+}
+
+/* Style pour la rangée des tableaux */
+.table-row {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: flex-start;
+  gap: 20px;
+  margin-block: 20px;
+}
+
+/* .infos{
+  max-width: 70ch;
+} */
+
+body>div:first-of-type{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+/* ========== images ========== */
+
+.pastilles-bouteilles-images {
+  position: relative;
+}
+
+.pastille-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.bouteille-image {
+  position: relative;
+  z-index: 0;
+}
+
+/* ======== INFOS ========= */
+
+.title-desc h1{
+  font-weight: bold;
+}
+
+.prix-box {
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.localisation-box {
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.infos-title h3 {
+  font-size: 32px;
+  font-weight: bold;
+  width: 233.33px;
+}
+
+.infos {
+  display: flex;
+  padding-top: 10px;
+  width: 1000px;
+}
+
+.info-row,
+.infos {
+  gap: 25px;
+}
+
+.infos-detailles {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+.infos-detailles-carte {
+  font-size: 14px;
+  width: 360px;
+}
+
+.infos-detailles-title {
+  margin-bottom: 2px;
+}
+
+.infos-detailles-text {
+  font-weight: bold;
+  margin-bottom: 30px;
+}

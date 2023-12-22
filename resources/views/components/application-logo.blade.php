@@ -1,0 +1,1 @@
+<img class="loginLogo" src="{{asset('images/logo.png')}}" alt="">

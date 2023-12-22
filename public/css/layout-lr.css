@@ -1,0 +1,190 @@
+@import url('fonts.css');
+
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    /** la largeur du téléphone dans le body au lieu de juste le footer? */
+    width: 100%;
+    min-width: var(--smoll-phone-w);
+    max-width: var(--desktop-w);
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+
+    transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+  }
+
+input {
+    font-family: "MabryPro";
+    font-size: 16px !important;
+    border-radius: 5px;
+}
+
+/* =========== HEADER =========== */
+
+main {
+    /** height retiré pour flex  */
+    /* height: 900px; */
+    flex: 1;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+nav {
+    align-items: center;
+}
+
+nav:not(.pagination),
+footer {
+    /** c'est dans le body à place? */
+    /* width: var(--iphone-14-w); */
+
+    padding-left: var(--back-to-card-margin);
+    padding-right: var(--back-to-card-margin);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: var(--dark-brown);
+}
+
+nav:not(.pagination) {
+    display: flex;
+    height: 45px;
+}
+
+nav:not(.pagination) a,
+nav .logo img {
+    height: 48px;
+}
+
+.grey-top,
+.blue-top {
+    width: 100%;
+    min-width: var(--smoll-phone-w);
+    max-width: var(--desktop-w);
+}
+
+.blue-top {
+    height: 6px;
+    background-color: var(--light-blue);
+}
+
+.grey-top {
+    height: 4px;
+    background-color: var(--light-grey);
+}
+
+/* search icon - More icon */
+
+.search-more {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.more-icon {
+    fill: white;
+}
+/* 
+.search-more a:first-child,
+.search-more a:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-more a:first-child {
+    height: 48px;
+    width: 48px;
+}
+
+.search-more a:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: invert(1);
+}
+
+.search-more a:nth-child(2) {
+    height: 35px;
+    width: 10px;
+}
+
+.search-more a:nth-child(2) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: invert(1);
+} */
+/* =========== FOOTER =========== */
+
+.footer-icon-tray {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon-tray a {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer-icon-tray p {
+    font-family: 'MabryPro';
+    font-size: 16px;
+    color: white;
+
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.footer-icon-img {
+    width: 60px;
+    height: 60px;
+}
+
+/* ========== MEDIA ========== */
+
+@media (max-width: 385px) {
+
+    /* Footer */
+    .footer-icon-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-icon-tray p {
+        font-size: 13px;
+    }
+
+    /* Header */
+    nav:not(.pagination) {
+        height: 40px;
+    }
+
+    nav:not(.pagination) a, nav .logo img {
+        height: 35px;
+    }
+
+    .search-more a:first-child {
+        height: 38px;
+        width: 38px;
+    }
+}

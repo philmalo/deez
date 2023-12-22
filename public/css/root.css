@@ -1,0 +1,41 @@
+:root {
+
+    /* ========= General colors ======== */
+    --light-blue: #7593c5;
+    --light-grey: #d7d8d9;
+
+        /* pastille */
+        --ac:#660534;
+        --ar:#b9c0de;
+        --as:#c73339;
+        --dl:#edf0c1;
+        --fd:#add2cb;
+        --fed:#c1dcf3;
+        --fg:#dd9527;
+        --fl:#e8c4dc;
+        --fv:#fce41f;
+
+        --ligne-gout: #6fc3ba;
+        
+    /* ========== Palette Champagne ========== */
+    --dark-brown: #a0764b;
+    --light-brown: #d4cd98;
+
+    /* ========= Palette Rouge ========== */
+    --dark-red: #ac1e23;
+    --light-red: #a73135;
+    --vivid-red: #ce1d1d;
+    --vivid-green: #2dd72d;
+
+    /* ========== Palette Bleu ========== */
+    --dark-blue: #4e4fa1;
+
+    /* ==================== PADDING // MARGIN ================ */
+    --back-to-card-margin: 17px;
+
+    /* ==================== MOBILE WIDTH // HEIGHT ================ */
+    --iphone-14-w: 430px;
+    --small-phone-w: 320px;
+    --small-phone-w-paddingIncluded: 287px;
+    --desktop-w: 1920px;
+}

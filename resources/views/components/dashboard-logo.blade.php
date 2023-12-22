@@ -1,0 +1,1 @@
+<img src="{{asset('/glide/images/logo.png?h=65&fit=crop')}}" alt="">

@@ -1,0 +1,18 @@
+.alert-success {
+    font-family: MabryPro;
+    color: #4F8A10;
+    background-color: #d9f0b3;
+    border: 1px solid #4F8A10;
+    padding: 20px;
+    padding-block: 15px;
+    margin-block: 1em;
+    border-radius: 7.25px;
+    display: flex;
+
+}
+.alert-success.extra-margin {
+    margin-inline: 1em;
+}
+.alert-success button{
+    margin-left: auto;
+}

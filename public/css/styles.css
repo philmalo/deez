@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Alata&family=Belanosima&family=Cinzel:wght@700&family=Lilita+One&display=swap');
+@import 'carte-vin.css';
+/* ========== Règles générales =========== */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== Navigation ========== */
+
+.top-banniere,
+.top-menu { 
+    width: 100%;
+}
+
+.top-banniere {
+    height: 55px;
+    background-color: #7e003f;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #e0dede;
+    height: 4.5rem;
+}
+
+.top-menu-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 90rem;
+}
+
+.top-menu img {
+    height: 4.4rem;
+}
+
+.top-menu-logo {
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 4.4rem;
+}
+
+.top-menu-logo p {
+    align-self: flex-end;
+    line-height: 32px;
+    font-family: 'Aclonica', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #7e003f;
+    margin: 0;
+}
+
+.sprint {
+    font-family: 'Cinzel', serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #7e003f;
+}
+
+.sprint p,
+.sprint a {
+    margin: 0;
+    text-decoration: none;
+    color: #7e003f;
+    transition: 0.2s;
+}
+
+.sprint a:hover {
+    color: #e271a9;
+}
+
+/* ========== Main ========== */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: calc(100vh - 180.4px); */
+}
+
+.main-logo {
+    margin-top: 40px;
+}
+
+/* ========== Footer ========== */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 55px;
+
+    font-family: 'Cinzel', serif;
+    background-color: lightgrey;
+    color: #7e003f;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* 
+font-family: 'Aclonica', sans-serif;
+font-family: 'Alata', sans-serif;
+font-family: 'Belanosima', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'Lilita One', cursive;
+*/

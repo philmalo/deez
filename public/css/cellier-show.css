@@ -1,0 +1,194 @@
+.boutonCellier {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    width: fit-content;
+
+    font-size: 12px;
+    font-family: 'MabryPro';
+    color: white;
+    margin: 0;
+
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: var(--dark-brown);
+}
+
+.boutonCellier.espace{
+    margin-top: 10px;
+}
+
+.creerCellier{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.your-bottles {
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+.creerCellier>form>*+*{
+    margin-top: 10px;
+}
+.header-nom-cellier {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 2em;
+    max-width: 100%;
+}
+
+.form-modifier {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    max-width: 80%;
+}
+.crayon-edit-icon img {
+    width: 20px;
+    height: 20px;
+    
+}
+.crayon-edit-icon {
+    margin-right: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.boutonSupp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--vivid-red);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.boutonSupp-cellier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--vivid-red);
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.boutonSupp-cellier img {
+    width: 20px;
+    height: 20px;
+}
+
+.form-modifier .input-edit-nom {
+    height: 30px;
+    border: 1px solid grey;
+    outline: none;
+    background-color: transparent;
+    font-size: 32px !important;
+    font-family: 'Bonobo', 'GelicaLight', sans-serif;
+    max-width: 50%;
+    width: max-content;
+    padding: 0;
+}
+.input-edit-nom.clickable {
+    border: 1px solid var(--light-brown);
+    border-radius: 5px;
+}
+.form-modifier button {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: "MabryPro";
+    font-size: 1em;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 1.5em;
+}
+.bouton-annuler {
+    background-color: var(--dark-brown);
+    color: white;
+}
+.bouton-enregistrer {
+    background-color: rgba(51, 206, 0, 0.861);
+    color: black;
+}
+
+/* carte-vin-cellier */
+
+/* boutons modifier et supprimer carte vin dans cellier */
+.carte-vin-cellier .sectionBoutons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.overlap-cellier-modifier,
+.overlap-cellier-supprimer {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    position: absolute;
+
+    border-radius: 5px;
+
+    font-family: 'Mabry Pro';
+    font-size: 14px;
+    color: white;
+}
+
+.overlap-cellier-modifier {
+    bottom: 10px;
+    right: 10px;
+
+    background-color: var(--vivid-green);
+}
+
+.overlap-cellier-supprimer {
+    bottom: 10px;
+    left: 75px;
+    width: auto;
+
+    background-color: var(--vivid-red);
+}
+
+.info-multiples-cellier {
+    display: flex;
+    gap: 5px;
+}
+
+.info-multiples-cellier > p:nth-of-type(2) > span {
+    font-weight: bold;
+}
+
+.sectionBoutons .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 20
+}
+
+.crayon-edit-icon span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-brown);
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.crayon-edit-icon .material-symbols-outlined {
+  color: white;
+}

@@ -1,0 +1,525 @@
+
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+/* ========= Bouteille / image ========== */
+
+.bouteille-container {
+    position: absolute;
+    top: 15%;
+    width: 40dvw;
+    height: 65dvh;
+    overflow: hidden;
+}
+
+.bouteille-img {
+    position: absolute;
+    left: -50%;
+
+    height: 540px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    pointer-events: none;
+}
+
+/* Bouteille Zoom */
+
+.bouteille-container-zoom {
+    position: absolute;
+    top: 11%;
+    width: 100dvw;
+    height: 88dvh;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.bouteille-img-zoom {
+    position: absolute;
+    left: 0;
+    height: 540px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description-container-zoom {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80dvw;
+    margin-left: 100%;
+    gap: 40px;
+    padding-top: 25px;
+}
+
+.footer {
+    position: relative;
+    top: 0%;
+    transition: top 0.4s ease;
+}
+
+.footer-zoom {
+    position: relative;
+    top: 15%;
+    transition: top 0.4s ease;
+}
+ .footer-none {
+    display: none;
+ }
+
+.bouteille-container,
+.bouteille-container-zoom,
+.bouteille-img,
+.bouteille-img-zoom,
+.description-container,
+.description-container-zoom {
+    transition: all 0.4s ease; /* pour une transition dans l'animation JS */
+}
+
+/* =========== Description =========== */
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* width: 100%;
+    min-width: 335px;
+    max-width: 335px; */
+    width: 77dvw;
+
+    margin-left: 95px;
+
+    gap: 40px;
+
+    padding-top: 25px;
+}
+
+/* titre */
+.carte-titre {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-right: 45px;
+}
+
+.informations > h3 {
+    display: flex;
+    align-items: center;
+    font-family: "Maax", "Bonobo";
+    font-size: 32px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.informations > h3 > img {
+    filter: brightness(0);
+    margin-right: 5px;
+    height: 25px;
+}
+
+.carte-titre p,
+.info-modal {
+    margin: 0;
+
+    font-family: 'MabryPro';
+    font-size: 16px;
+}
+
+.carte-titre h2 {
+    margin: 0;
+
+    font-family: 'Bonobo', 'GelicaLight', sans-serif;
+    font-size: 28px;
+}
+
+/* Bouton Ajouter */
+.bouton-ajouter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 90%;
+    min-width: 200px;
+    max-width: 700px;
+    height: 50px;
+    flex-shrink: 0;
+
+    background-color: rgb(45, 215, 45);
+    text-decoration: none;
+    border-radius: 5px;
+
+    font-family: 'Bonobo', 'GelicaLight', sans-serif;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.bouton-ajouter img {
+    height: 25px;
+}
+
+/* == informations == */
+.informations {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'MabryPro';
+    letter-spacing: 0.7px;
+
+    padding-right: 45px;
+    /* padding-bottom: 40px; */
+}
+
+/* info-double */
+.info-double {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.info-double div {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+}
+
+.info-double h3,
+.info-double p,
+.info-simple h3,
+.info-simple p,
+.info-detaillee h3,
+.info-detaillee p,
+.texte-gouts h3,
+.texte-gouts p {
+    margin: 0;
+}
+
+.info-double h3,
+.info-simple h3 {
+    font-weight: normal;
+}
+
+.info-double p,
+.info-simple p {
+    font-weight: bold;
+}
+
+/* info-simple */
+.info-simple,
+.info-detaillee {
+    display: flex;
+    flex-direction: column;
+}
+
+/* info detaillée */
+.info-detaillee h3 {
+    font-weight: bold;
+}
+
+.info-detaillee {
+    gap: 5px;
+}
+
+/* division */
+.division {
+    width: 100%;
+    min-width: 230px;
+    max-width: 400px;
+
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--light-grey);
+}
+
+/* == commentaire et note == */
+
+.commentaire-existant {
+    display: flex;
+    flex-direction: column;
+}
+
+.commentaire-note {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 40px;
+    width: 90%;
+}
+
+.commentaire-note form {
+    display: flex; /* important */
+    flex-direction: column;
+}
+
+.form-visible {
+    display: flex;
+}
+
+div .form-invisible {
+    display: none;
+}
+
+form,
+.commentaire-existant {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--light-brown);
+    gap: 10px;
+    margin: auto;
+    width: 90%;
+}
+
+form label,
+.commentaire > h3,
+.note > h3 {
+    font-family: 'Bonobo', 'GelicaLight', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.commentaire > h3,
+.note > h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    background-color: #f6f6f6;
+    opacity: 0.7;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+form textarea,
+.commentaire > p,
+.note > p {
+    font-family: 'MabryPro';
+    font-size: 18px;
+}
+
+textarea {
+    padding: 0;
+    border: none;
+}
+
+.bouton-modifier,
+.bouton-submit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: auto;
+    width: fit-content;
+
+    background-color: var(--dark-brown);
+
+    font-family: 'MabryPro';
+    font-size: 16px;
+    color: white;
+}
+
+button {
+    /* Reset styles */
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font: inherit;
+    text-align: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none; /* Remove the outline when the button is focused */
+  }
+
+.bouton-modifier a,
+.bouton-submit button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.bouton-submit img {
+    width: 22px;
+}
+
+.invisible-385px {
+    display: none;
+}
+
+/* Note */
+
+.note-etoile {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+  
+.etoile {
+    cursor: pointer;
+}
+
+.etoile img {
+    width: 35px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 48;
+    font-size: 40px !important;
+    color: grey;
+}
+
+.material-symbols-outlined.actif {
+    font-variation-settings:'FILL' 1;
+    color: rgb(127, 36, 36);
+}
+
+a span.material-symbols-outlined {
+    font-size: 22px !important;
+    color: white;
+}
+
+
+
+/* == information gouts == */
+
+
+.info-gouts-container,
+.info-gouts {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-gouts-container {
+    gap: 25px;
+}
+
+.info-gouts {
+    gap: 10px;
+}
+
+.texte-gouts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.texte-gouts h3,
+.texte-gouts p {
+    font-size: 16px;
+}
+
+.texte-gouts h3 {
+    font-weight: normal;
+}
+
+.texte-gouts p {
+    font-weight: bold;
+}
+
+/* lignes */
+.ligne-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.ligne-gauche,
+.ligne-centre,
+.ligne-droite {
+    width: 90px;
+    height: 8px;
+    background-color: #d1d3d6;
+}
+
+.ligne-gauche {
+    border-radius: 5px 0 0 5px;
+}
+
+.ligne-droite {
+    border-radius: 0 5px 5px 0;
+}
+
+/* ========== MEDIA ========== */
+
+@media (max-width: 385px) {
+
+    /* Bouteille */
+
+    /* description */
+    .description-container {
+        /* margin-left: 65px;
+        max-width: 255px;
+        min-width: 255px; */
+        gap: 30px;
+        margin-left: 25%;
+        width: 70vw; /* Chiffres magiques, j'en convient, mais c'est ce qui parrait le mieux*/
+    }
+
+    .carte-titre {
+        margin-right: 20px;
+    }
+
+    .carte-titre h2 {
+        font-size: 20px;
+    }
+
+    /* information */
+    .informations {
+        padding-right: 20px;
+        font-size: 14px;
+    }
+
+    /* gouts */
+    .texte-gouts h3,
+    .texte-gouts p {
+        font-size: 14px;
+    }
+
+    /* commentaires */
+    .commentaire-note {
+        width: 95%;
+    }
+
+    form textarea,
+    .commentaire > p,
+    .note > p,
+    .bouton-modifier,
+    .bouton-submit {
+        font-size: 14px;
+    }
+
+    form label,
+    .commentaire > h3,
+    .note > h3 {
+        font-size: 16px;
+    }
+
+    .bouton-submit img {
+        width: 16px;
+    }
+
+    .note-etoile {
+        gap: 5px;
+    }
+
+    .material-symbols-outlined {
+        font-size: 28px !important;
+    }
+
+}

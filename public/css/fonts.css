@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'MabryPro';
+    src: url('/fonts/MabryPro-Regular.ttf') format('ttf'),
+         url('/fonts/MabryPro-Regular.woff') format('woff'),
+         url('/fonts/MabryPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GelicaRegular';
+    src: url('/fonts/gelica-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GelicaLight';
+    src: url('/fonts/gelica-light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dillan';
+    src: url('/fonts/Dillan.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maax';
+    src: url('/fonts/MaaxTrial-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bonobo';
+    src: url('/fonts/Bonobo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+00E9, /* é */
+                   U+00E8, /* è */
+                   U+00EB, /* ë */
+                   U+00E0, /* à */
+                   U+00E4, /* ä */
+                   U+00F6, /* ö */
+                   U+00F3, /* ó */
+                   U+00E7, /* ç */
+                   U+0021, /* ! */
+                   U+002D, /* - */
+                   U+002F, /* / */
+                   U+0027, /* ' */
+                   U+0034, /* 4 */
+                   U+0024; /* $ */
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('/fonts/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,125 @@
+/* mobile first */ 
+:root
+{
+    --primary: #4E4FA1; 
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+.container
+{
+    display: flex;
+}
+
+body
+{  
+    margin: 0;
+    flex-direction: column;
+    min-height:100vh ;
+    background-color: lightgray;
+}
+
+/* Nvaigation */ 
+nav
+{
+    background-color: var(--primary);
+    height: 70px;
+    align-items: center;   
+}
+
+.navigation
+{
+    flex-direction: row;
+    align-items: center;
+    margin: 15px;
+    gap: 25px;
+    margin-left: auto;
+}
+
+/* Main */
+main
+{
+    flex-direction: column;
+}
+
+.main-container
+{
+    height:300px ;
+}
+
+.container-connexion
+{
+    height:265px ;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+input
+{
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px black;
+    font-size: 16px;
+}
+
+input[type=text], [type=password]
+{  
+    width: 280px;
+    border: 1px solid black; 
+    font-size: 1.2rem;  
+}
+
+input[type=submit]
+{
+    width: 160px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1.1rem;
+}
+
+input[type=submit]:hover
+{
+
+    background-color: white;
+    color: var(--primary);
+}
+
+.lien-reinitialisation
+{
+    text-decoration: none;
+    color: var(--primary);
+    margin-bottom: 100px;
+}
+
+/* Pied de l'app */ 
+footer
+{
+    height: 100px;
+    background-color: var(--primary);
+    align-items: center;
+    margin-top: auto;
+  
+}
+
+.footer-content
+{  
+    flex-direction: row;
+    gap: 30px;
+    margin: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-content-card 
+{
+    width: 60px ;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,233 @@
+.hamburger {
+    height: 45px !important;
+    cursor: pointer;
+}
+
+.hamburger img {
+    height: 45px;
+}
+
+.mobile-nav div > a
+.filtre-nav div > a {
+    text-decoration: none;
+}
+
+.mobile-nav > .deconnexion-div > .deconnexion-button a 
+.filtre-nav > .deconnexion-div > .deconnexion-button a {
+    color: white;
+}
+
+.mobile-nav .deconnexion-menu > a,
+.filtre-nav .deconnexion-menu > form,
+.mobile-nav > .deconnexion-menu > a,
+.filtre-nav > .deconnexion-menu > form,
+.mobile-nav .deconnexion-app-info {
+    font-family: 'MabryPro';
+    color: grey;
+    text-decoration: none;
+}
+
+.mobile-nav,
+.filtre-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    margin-top: 75px;
+    min-height: calc(100vh - 75px);
+    z-index: 3;
+    transition: 0.2s;
+    background-color: white;
+}
+
+.mobile-nav {
+    left: 100%;
+}
+
+.filtre-nav {
+    left: -100%;
+
+    /* overflow nécéssaire au scrolling */
+    bottom: 0;
+    overflow: auto;
+}
+
+.is-active {
+    left: 20%;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
+}
+
+.is-active-filtre {
+    left: 0%;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
+}
+
+.is-grey {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+/* .mobile-nav div > a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+} */
+
+.mobile-nav > div > a,
+.filtre-nav > div > a,
+.mobile-nav p,
+.filtre-nav p,
+.mobile-nav div > p,
+.filtre-nav div > p {
+    padding: 15px;
+}
+
+.mobile-nav > div > a,
+.filtre-nav > div > a {
+    margin: 0 auto 10px;
+}
+
+.mobile-nav p,
+.filtre-nav p,
+.mobile-nav div > p,
+.filtre-nav div > p {
+    margin: 0;
+}
+
+.mobile-nav div:nth-child(3),
+.filtre-nav div:nth-child(3) {
+    margin-top: auto;
+}
+
+.deconnexion-div {
+    border-bottom: 2px solid lightgrey;
+    padding: 15px;
+}
+
+.deconnexion-menu a {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+}
+
+.deconnexion-button > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-brown);
+    border-radius: 5px;
+    height: 60px;
+
+    font-family: 'Bonobo', 'GelicaLight', sans-serif;
+    font-size: 26px;
+    color: white;
+}
+
+.deconnexion-app-info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.deconnexion-app-info div:first-child {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+}
+
+.deconnexion-app-info div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.deconnexion-app-info > div:last-child {
+    border-top: 2px solid lightgrey;
+}
+
+.mobile-nav .deconnexion-app-info > div:first-child p,
+.filtre-nav .deconnexion-app-info > div:first-child p {
+    font-size: 14px;
+}
+
+.mobile-nav .deconnexion-app-info > div:last-child p,
+.filtre-nav .deconnexion-app-info > div:last-child p {
+    font-size: 18px;
+}
+
+.mobile-nav .humans > a {
+    color: unset;
+}
+
+/* Overlay */
+
+.overlay-grey,
+.overlay-grey-filtre {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 75px);
+    margin-top: 75px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+    z-index: 2;
+}
+
+/* menu filtre */
+
+.filtre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* ========== MEDIA ========== */
+
+@media (max-width: 385px) {
+
+    .mobile-nav,
+    .filtre-nav {
+        margin-top: 70px;
+        min-height: calc(100vh - 70px);
+        width: 100%;
+    }
+
+    .is-active {
+        left: 0%;
+    }
+
+    .deconnexion-menu a,
+    .mobile-nav .deconnexion-app-info > div:last-child p,
+    .filtre-nav .deconnexion-app-info > div:last-child p {
+        font-size: 16px;
+    }
+
+    .filtre-nav > div > a,
+    .mobile-nav > div > a {
+        margin: 0;
+    }
+
+    .deconnexion-button > a {
+        font-size: 22px;
+    }
+
+    .hamburger {
+        height: 40px !important;
+    }
+
+    .hamburger img {
+        height: 40px;
+    }
+}

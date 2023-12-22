@@ -1,0 +1,260 @@
+.filtres-tris-conteneur {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    max-width: 100%;
+    max-height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px 10px 15px;
+    background-color: var(--light-brown);
+}
+.filtres-tris-conteneur > * {
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    background-color: var(--dark-brown);
+    padding-block: 8px;
+}
+.filtres-tris-conteneur > * img {
+    max-width: 30px;
+    max-height: 30px;
+    
+}
+.filtres-side-bar {
+    /* display: flex; */
+    flex-direction: column;
+}
+
+.resultats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-brown);
+    width: 100%;
+    margin: 0;
+    padding-bottom: 5px;
+    font-family: "MabryPro";
+    font-weight: normal;
+    color: white;
+}
+.zone-pillules {
+    margin-inline: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.zone-pillules > div { /* Les pillules elles memes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    background-color: white;
+    font-family: 'MabryPro';
+    font-weight: lighter !important;
+    color: grey;
+
+    border: 1px solid grey;
+    border-radius: 25px;
+    padding: 5px;
+    padding-top: 7px;
+    padding-left: 7px;
+    margin: 10px 5px 10px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: fit-content;
+}
+.zone-pillules > div p {
+    margin: 0;
+    margin-top: 1px;
+    padding: 5px !important;
+    text-align: center;
+    line-height: 0.8;
+}
+.zone-pillules > div button {
+    background-color: transparent;
+    border: none;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 10px;
+    margin-right: 5px;
+}
+.zone-pillules > div img {
+    max-height: 100%;
+}
+
+/* dropdown */
+
+.label-simple {
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    width: calc(90% - 20px);
+    padding: 10px;
+}
+
+.label-simple > label {
+    flex-grow: 1;
+}
+
+.options-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+}
+
+.filtre-dropdown-couleurs,
+.filtre-dropdown-pays,
+.filtre-dropdown-prix,
+.filtre-dropdown-cepages,
+.filtre-dropdown-pastilles {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+
+    width: 100%;
+}
+
+.filtre-dropdown-couleurs.borderbot,
+.filtre-dropdown-pays.borderbot,
+.filtre-dropdown-prix.borderbot,
+.filtre-dropdown-cepages.borderbot,
+.filtre-dropdown-pastilles.borderbot {
+    border-bottom: 1px solid grey;
+}
+
+.filtre-dropdown-couleurs.show {
+    max-height: 205px;
+}
+
+.filtre-dropdown-pays.show {
+    max-height: 1685px;
+}
+
+.filtre-dropdown-prix.show {
+    max-height: 360px;
+}
+.filtre-dropdown-cepages.show {
+    max-height: 18400px;
+}
+
+.filtre-dropdown-pastilles.show {
+    max-height: 460px;
+}
+
+.filtre {
+    font-family: 'MabryPro';
+    font-size: 20px;
+    color: grey;
+}
+
+.filtre-button-pays,
+.filtre-button-cepages,
+.filtre-button-couleurs,
+.filtre-button-prix,
+.filtre-button-pastilles {
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid grey;
+}
+
+.filtre-button-couleurs,
+.filtre-button-pays,
+.filtre-button-cepages,
+.filtre-button-prix,
+.filtre-button-pastilles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filtre-button-couleurs > img,
+.filtre-button-pays > img,
+.filtre-button-cepages > img,
+.filtre-button-prix > img,
+.filtre-button-pastilles > img {
+    width: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.filtre-button-couleurs.bordertop {
+    border-top: 1px solid grey;
+}
+
+.filtre-button-couleurs.colorChange,
+.filtre-button-pays.colorChange,
+.filtre-button-cepages.colorChange,
+.filtre-button-prix.colorChange,
+.filtre-button-pastilles.colorChange {
+    background-color: grey;
+    color: white;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.plus-couleurs.rotate,
+.plus-prix.rotate,
+.plus-cepages.rotate,
+.plus-pays.rotate,
+.plus-pastilles.rotate {
+    
+    transform: rotate(45deg);
+    filter: grayscale(100%) brightness(200%) contrast(200%);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.filtres-trigger p,
+.tris-trigger p {
+    font-size: 20px;
+    margin-top: 0;
+    color: white;
+}
+
+/* input */
+
+.input-checkbox {
+    width: 25px;
+    height: 25px;
+    accent-color: grey;
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.filtres-trigger p {
+    display: block;
+}
+
+.tris-trigger > p .material-symbols-outlined {
+    display: none;
+}
+
+/* ================= MEDIA ================= */
+
+@media (max-width: 385px) {
+
+    .filtres-trigger p,
+    .tris-trigger p {
+        font-size: 14px;
+    }
+
+    .tri .material-symbols-outlined {
+        display: none;
+    }
+}

@@ -1,0 +1,39 @@
+/* TEAM DEEZ */
+
+    Jack-of-all-trades: Philippe Malo
+    Contact: me [at] philippemalo.dev
+    Twitter: none
+    Location: Mascouche, Québec, Canada.
+
+    OpSec: Émile Daignault
+    Site: none
+    Twitter: none
+    Location: Saint-Calixte-de-Kilkenny, Québec, Canada.
+
+    The artist formerly known as: Louis Roby
+    Site: none
+    Twitter: none
+    Location: Montréal, Québec, Canada.
+
+/* GROS MERCI */
+
+    Le Guide Sherpa du CSS: Marc-André Charpentier
+
+    Le cinéaste du PHP: Guillaume Harvey
+
+/* SITE */
+
+    Dernière MAJ: 2023/08/15
+    Langage: Français / Anglais
+    Doctype: HTML5
+    Composants:
+        Glide
+        Breeze
+        Symfony/dom-crawler
+        Laravel
+    Créé avec:
+        VS Code
+        Monster Energy drinks!
+
+    Notre premier site (un peu) plus sÃ©rieux conçu dans
+    le cadre de notre projet web final en formation de Développement web!

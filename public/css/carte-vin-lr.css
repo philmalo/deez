@@ -1,0 +1,201 @@
+main {
+    padding-left: var(--back-to-card-margin);
+    padding-right: var(--back-to-card-margin);
+}
+
+.carte-vin-container {
+    height: auto;
+    margin-top: 45px;
+}
+
+.carte-vin {
+    display: flex;
+    width: 100%;
+    min-width: var(--small-phone-w-paddingIncluded);
+    max-width: var(--desktop-w);
+    height: auto;
+    min-height: 90px;
+    max-height: 260px;
+    padding-bottom: 10px;
+    border-radius: 0px 0px 10px 10px;
+
+    background-color: var(--light-brown);
+
+    position: relative;
+}
+
+.protruding {
+    position: absolute;
+    bottom: 4px;
+    left: -17px;
+}
+
+.overlap {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    border-radius: 5px;
+    background-color: var(--dark-brown);
+}
+
+.overlap p {
+    font-size: 12px;
+    font-family: 'MabryPro';
+    color: white;
+    margin: 0;
+}
+
+.overlap img {
+    width: 15px;
+    height: 15px;
+}
+
+.carte-vin section {
+    margin-left: 75px;
+    /* padding-left: 10px; */
+    padding-right: 10px;
+}
+
+/* boutons modifier et supprimer carte vin dans cellier */
+.carte-vin .sectionBoutons {
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+
+h2 {
+    font-family: 'Bonobo', 'GelicaLight', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: black;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, .span-prix {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'MabryPro';
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 5px;
+}
+
+.span-prix {
+    margin-top: 5px;
+}
+
+/* ========== Bande de Gout ========== */
+
+.bande-de-gout-vide {
+    height: 23px;
+}
+
+.bande-de-gout-ac,
+.bande-de-gout-ar,
+.bande-de-gout-as,
+.bande-de-gout-dl,
+.bande-de-gout-fd,
+.bande-de-gout-fed,
+.bande-de-gout-fg,
+.bande-de-gout-fl,
+.bande-de-gout-fv {
+    display: flex;
+    align-items: center;
+
+    height: 23px;
+    border-radius: 10px 10px 0px 0px;
+    border: 2px solid #a79866;
+    padding-left: 80px;
+    /* margin-top: 80px; */
+    font-family: BebasNeue;
+    color: white;
+}
+
+.no-pastille,
+.no-pastille-cellier {
+    border-radius: 10px 10px 10px 10px;
+    min-height: 100px;
+}
+
+.no-pastille {
+    padding-bottom: 23px;
+}
+
+.bande-de-gout-fv {
+    background-color: var(--fv);
+}
+
+.bande-de-gout-ac {
+    background-color: var(--ac);
+}
+
+.bande-de-gout-ar {
+    background-color: var(--ar);
+}
+
+.bande-de-gout-as {
+    background-color: var(--as);
+}
+
+.bande-de-gout-dl {
+    background-color: var(--dl);
+}
+
+.bande-de-gout-fd {
+    background-color: var(--fd);
+}
+
+.bande-de-gout-fed {
+    background-color: var(--fed);
+}
+
+.bande-de-gout-fg {
+    background-color: var(--fg);
+}
+
+.bande-de-gout-fl {
+    background-color: var(--fl);
+}
+
+.bande-de-gout-fv {
+    background-color: var(--fv);
+}
+
+/* ========== MEDIA ========== */
+
+@media (max-width: 385px) {
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .invisible-385px {
+        display: none;
+    }
+
+    .overlap img {
+        width: 18px;
+        height: 18px;
+    }
+}
